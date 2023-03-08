@@ -1,0 +1,16 @@
+:root {
+    --ff-1: 'Roboto Condensed', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #fffffe;
+}
