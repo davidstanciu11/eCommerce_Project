@@ -1,6 +1,7 @@
 import Navigation from "../components/Navigation";
 import DarkVariant from "../components/BootstrapCarousel";
 import CardsCategories from "../components/CardsCategories";
+import TrendingProducts from "../components/TrendingProducts";
 
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
 			<Navigation />
             <DarkVariant/>
 			<CardsCategories/>
+			<TrendingProducts/>
 		</>
 	);
 }
