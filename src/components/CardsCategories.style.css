@@ -1,0 +1,43 @@
+:root {
+    --card-color1: #f6f6f6;
+}
+
+
+.card_img {
+    width: 22rem;
+    height: 16rem;
+    object-fit: contain;
+}
+
+.flex {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 32rem;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--card-color1);
+    border: none;
+    border-radius: 7px;
+    position: relative;
+}
+
+.card_img1 {
+    width: 31rem;
+}
+
+.text {
+    margin-left: 1rem;
+    margin-top: 5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.links {
+    text-decoration: none;
+    color: grey;
+    font-size: 1.1rem;
+}
