@@ -1,6 +1,69 @@
+.carousel {
+	width: 100vw;
+	height: 100vh;
+	margin: auto;
+    margin-top: 1.5rem;
+}
 
 .show_pics {
     width: 100vw;
     height: 100vh;
-    
+    object-fit: contain;
+}
+
+.title_product {
+    font-size: 1.7rem;
+    color: #fffffe;
+}
+
+.description_product {
+    font-size: 1.7rem;
+    color: #fffffe;
+    font-weight: bold;
+}
+
+.title_product1 {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: bold;
+   
+}
+
+
+.description_prodcut1 {
+    font-size: 1.55rem;
+    font-weight: bold;
+    color: #000;
+}
+
+#button {
+    margin-bottom: 2.8rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#button_1 {
+    margin-bottom: 57.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.caption_1 {
+    margin-right: 50rem;
+}
+
+
+#button_2 {
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#caption_3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#title_3 {
+    font-size: 1.5rem;
 }

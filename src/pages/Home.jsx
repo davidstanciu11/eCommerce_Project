@@ -6,8 +6,7 @@ function Home() {
 	return (
 		<>
 			<Navigation />
-            <div><DarkVariant/></div>
-            
+            <DarkVariant/>
 		</>
 	);
 }
