@@ -4,9 +4,9 @@
 
 
 .card_img {
-    width: 22rem;
+    width: 21rem;
     height: 16rem;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .flex {
@@ -16,8 +16,8 @@
     justify-content: space-evenly;
 }
 
-.card {
-    width: 32rem;
+.categories {
+    width: 31rem;
     display: flex;
     flex-direction: row;
     background-color: var(--card-color1);
@@ -27,7 +27,7 @@
 }
 
 .card_img1 {
-    width: 31rem;
+    width: 18rem;
 }
 
 .text {

@@ -9,7 +9,7 @@ function CardsCategories() {
 		<>
 			{" "}
 			<div className='flex'>
-				<div className='card'>
+				<div className='categories'>
 					<div className='text'>
 						<h2>Customers Love</h2>
 						<Link to={"/produse"} className="links">Discover Now</Link>
@@ -18,7 +18,7 @@ function CardsCategories() {
 						<img src={coffee_table} alt='coffee table' className='card_img' />
 					</div>
 				</div>
-				<div className='card'>
+				<div className='categories'>
 					<div className='text'>
 						<h2>Latest Finds</h2>
 						<Link to={"/produse"} className="links">Discover Now</Link>
@@ -27,7 +27,7 @@ function CardsCategories() {
 						<img src={storage} alt='storage' className='card_img card_img1' />
 					</div>
 				</div>
-				<div className='card'>
+				<div className='categories'>
 					<div className='text'>
 						<h2>Classic Pieces</h2>
 						<Link to={"/produse"} className="links">Discover Now</Link>

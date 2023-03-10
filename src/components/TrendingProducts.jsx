@@ -1,12 +1,40 @@
-
+import { useState, useEffect } from "react";
+import { Spinner, Row } from "reactstrap";
+import "./TrendingProducts.style.css";
+import ProductsCards from "./ProductsCards";
 
 function TrendingProducts() {
-    return (<>
-    <div className="description">
-        <h2>Trending Products</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam adipisci voluptatibus nihil libero magni expedita.</p>
-    </div>
-    </>)
+	const [productsList, setProductsList] = useState(null);
+	useEffect(() => {
+		fetch("https://fakestoreapi.com/products?limit=8")
+			.then((res) => res.json())
+			.then((productsListAPI) => setProductsList(productsListAPI))
+	}, []);
+
+	return (
+		<>
+			{productsList ? (
+				<>
+					<div className='description'>
+						<h2 id='title_trending'>Trending Products</h2>
+						<p id='par_trending'>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							Quibusdam adipisci voluptatibus nihil libero magni expedita.
+						</p>
+					</div>
+					<Row xs='1' lg='4'>
+						{productsList.map((product, index) => {
+							return (
+								<ProductsCards product={product} key={"product_" + index} />
+							);
+						})}
+					</Row>
+				</>
+			) : (
+				<Spinner></Spinner>
+			)}
+		</>
+	);
 }
 
 export default TrendingProducts;

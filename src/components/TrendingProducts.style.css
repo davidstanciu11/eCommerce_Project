@@ -1,0 +1,58 @@
+
+.description {
+    display: grid;
+    justify-content: center;
+}
+
+#title_trending {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#par_trending {
+    font-size: 1.6rem;
+    color: grey;
+    margin-bottom: 9rem;
+}
+
+#title_trending:before,
+#title_trending:after {
+  background-color: grey;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+#title_trending:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+#title_trending:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.card {
+    background-color: #fffffe;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+}
+
+.product_title {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1rem;
+}
+
+
+.cards_photos {
+    width: 30rem;
+    height: 30rem;
+}
