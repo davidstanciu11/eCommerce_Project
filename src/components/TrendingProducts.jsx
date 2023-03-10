@@ -22,7 +22,7 @@ function TrendingProducts() {
 							Quibusdam adipisci voluptatibus nihil libero magni expedita.
 						</p>
 					</div>
-					<Row xs='1' lg='4'>
+					<Row lg='4' className="row">
 						{productsList.map((product, index) => {
 							return (
 								<ProductsCards product={product} key={"product_" + index} />
