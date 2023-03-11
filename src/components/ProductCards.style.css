@@ -14,6 +14,7 @@
 .product_title {
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     margin-top: 1rem;
     padding: 5px;
     color: black;
