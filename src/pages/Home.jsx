@@ -1,7 +1,7 @@
 import Navigation from "../components/Navigation";
 import DarkVariant from "../components/BootstrapCarousel";
 import CardsCategories from "../components/CardsCategories";
-import TrendingProducts from "../components/TrendingProducts";
+import TrendingProducts from "./TrendingProducts";
 
 function Home() {
 	return (

@@ -1,4 +1,4 @@
-import "./TrendingProducts.style.css";
+import "./ProductCards.style.css";
 import { Col, Button } from "reactstrap";
 import { Link } from "react-router-dom";
 
