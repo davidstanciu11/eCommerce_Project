@@ -1,0 +1,27 @@
+.produse_page {
+	display: flex;
+	margin-top: 5rem;
+}
+
+.filter_section {
+	width: 35vw;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+}
+
+#search {
+	width: 100%;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg");
+	background-size: 13px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+    padding-left: 50px;
+}
+
+#search::placeholder {
+	padding-left: 2rem;
+	font-size: 1.4rem;
+    color: rgb(175, 174, 174);
+}
+
+

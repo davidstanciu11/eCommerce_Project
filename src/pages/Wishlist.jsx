@@ -1,3 +1,7 @@
-function Wishlist() {}
+
+
+function Wishlist() {
+    
+}
 
 export default Wishlist;

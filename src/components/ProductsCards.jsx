@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function ProductsCards({ product }) {
 	return (
-		<Col className='mt-4'>
+		<div className='col'>
 			<div className='card'>
 				<img
 					src={product.image}
@@ -15,13 +15,16 @@ function ProductsCards({ product }) {
 					<h2 className='product_title'>{product.title}</h2>
 					<p className='product_desc'>${product.price}</p>
 					<Link to={"/produse"}>
-						<button type='button' class='btn btn-outline-dark' id="product_button">
+						<button
+							type='button'
+							class='btn btn-outline-dark'
+							id='product_button'>
 							Find Out
 						</button>
 					</Link>
 				</div>
 			</div>
-		</Col>
+		</div>
 	);
 }
 
