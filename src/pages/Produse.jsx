@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import ProductsCards from "../components/ProductsCards";
-import { Spinner, Row, Input, Badge, Button } from "reactstrap";
+import { Spinner, Row, Input } from "reactstrap";
 import "./Produse.style.css";
 
 function Produse() {
@@ -83,7 +83,7 @@ function Produse() {
 					</div>
 				</>
 			) : (
-				<Spinner className='spinner'></Spinner>
+				<div className="spinner"><Spinner></Spinner></div>
 			)}
 		</>
 	);

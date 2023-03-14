@@ -31,7 +31,7 @@ function TrendingProducts() {
 					</Row>
 				</>
 			) : (
-				<Spinner className="spinner"></Spinner>
+				<div className="spinner"><Spinner></Spinner></div>
 			)}
 		</>
 	);

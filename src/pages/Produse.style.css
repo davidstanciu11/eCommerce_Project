@@ -11,9 +11,7 @@
 	height: 100vh;
 }
 
-.products_section {
-	padding: 10px;
-}
+
 
 
 #search {
@@ -30,11 +28,6 @@
 #search::placeholder { 
 	font-size: 1.4rem;
     color: rgb(175, 174, 174);
-}
-
-.row {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
 }
 
 .category_ti {
