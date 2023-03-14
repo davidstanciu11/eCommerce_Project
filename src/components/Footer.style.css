@@ -1,12 +1,12 @@
 .footer {
 	width: 100vw;
 	bottom: 0;
+	margin-top: 7rem;
 	background-color: #0f0e17;
 	color: grey;
 	font-size: 1.2rem;
     display: flex;
     justify-content: space-between;
-	margin-top: 7rem;
 
 }
 

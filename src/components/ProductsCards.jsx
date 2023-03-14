@@ -17,7 +17,7 @@ function ProductsCards({ product }) {
 					<Link to={"/produse"}>
 						<button
 							type='button'
-							class='btn btn-outline-dark'
+							className='btn btn-outline-dark'
 							id='product_button'>
 							Find Out
 						</button>
