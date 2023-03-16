@@ -11,7 +11,7 @@ function Produse() {
 	const [filterProducts, setFilterProducts] = useState(null);
 
 	useEffect(() => {
-		fetch("https://fakestoreapi.com/products?limit=8")
+		fetch("https://fakestoreapi.com/products?limit=20")
 			.then((res) => res.json())
 			.then((productsListAPI) => setProductsList(productsListAPI));
 

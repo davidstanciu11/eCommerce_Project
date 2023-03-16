@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import "./Navigation.css";
 
 function Navigation() {
+	// const arrayFromStorage = JSON.parse(localStorage.getItem("produs"));
+	// const arrayLength = arrayFromStorage.length;
+
 	return (
 		<div className='navbar'>
 			<div className='first_part'>
@@ -17,7 +20,10 @@ function Navigation() {
 			</div>
 			<div className='second_part'>
 				<Link className='nav_li' to={"/wishlist"}>
-					Wishlist <span id='orders'>(0)</span>
+					Wishlist{" "}
+					<span id='orders'>
+						(0)
+					</span>
 				</Link>
 			</div>
 		</div>
