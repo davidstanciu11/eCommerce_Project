@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import coffee_table from "../../assets/coffee_table.webp";
-import people from "../../assets/people.jpg";
-import storage from "../../assets/storage.jpg";
+import coffee_table from "../assets/coffee_table.webp";
+import people from "../assets/people.jpg";
+import storage from "../assets/storage.jpg";
 import "./CardsCategories.style.css";
 
 function CardsCategories() {

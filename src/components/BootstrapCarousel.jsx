@@ -1,7 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
-import Kitchen from "../../assets/Kitchen.jpg";
-import chair from "../../assets/chair.webp";
-import sofa from "../../assets/sofa.jpg";
+import Kitchen from "../assets/Kitchen.jpg";
+import chair from "../assets/chair.webp";
+import sofa from "../assets/sofa.jpg";
 import "./BootstrapCarousel.css";
 import { Button } from "bootstrap";
 import { Link } from "react-router-dom";
@@ -15,7 +15,7 @@ function DarkVariant() {
 					<h5 className='title_product'>Brown Leather Sofa</h5>
 					<p className='description_product'>Newest Collection &#169; 2023</p>
 					<Link to={"/produse"}>
-						<button type='button' class='btn btn-outline-light' id='button'>
+						<button type='button' className='btn btn-outline-light' id='button'>
 							Discover
 						</button>
 					</Link>
@@ -27,7 +27,7 @@ function DarkVariant() {
 					<h5 className='title_product1'>Kitchen Set</h5>
 					<p className='description_prodcut1'>Newest Collection &#169; 2023</p>
 					<Link to={"/produse"}>
-						<button type='button' class='btn btn-outline-dark' id='button_1'>
+						<button type='button' className='btn btn-outline-dark' id='button_1'>
 							Discover
 						</button>
 					</Link>
@@ -39,7 +39,7 @@ function DarkVariant() {
 					<h5 id='title_3'>Mugler Chair</h5>
 					<p id='caption_3'>Newest Collection &#169; 2023</p>
 					<Link to={"/produse"}>
-						<button type='button' class='btn btn-outline-dark' id='button_2'>
+						<button type='button' className='btn btn-outline-dark' id='button_2'>
 							Discover
 						</button>
 					</Link>

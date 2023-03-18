@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Navigation.css";
+import cart from "./../assets/shopping_cart.png";
 
 function Navigation() {
 	// const arrayFromStorage = JSON.parse(localStorage.getItem("produs"));
@@ -19,11 +20,8 @@ function Navigation() {
 				<h1 id='title'>OutStock&#8482;</h1>
 			</div>
 			<div className='second_part'>
-				<Link className='nav_li' to={"/wishlist"}>
-					Wishlist{" "}
-					<span id='orders'>
-						(0)
-					</span>
+				<Link className='nav_li' to={"/cart"}>
+					Cart <span> <img src={cart} alt="shopping cart" className="shopping_cart"/></span> 
 				</Link>
 			</div>
 		</div>

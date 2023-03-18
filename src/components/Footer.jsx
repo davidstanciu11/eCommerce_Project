@@ -1,9 +1,9 @@
 import "./Footer.style.css";
 import { Link } from "react-router-dom";
-import facebook from "../../assets/facebook.png";
-import instagram from "../../assets/instagram.png";
-import twitter from "../../assets/twitter.png";
-import github from "../../assets/github.png";
+import facebook from "../assets/facebook.png";
+import instagram from "../assets/instagram.png";
+import twitter from "../assets/twitter.png";
+import github from "../assets/github.png";
 
 function Footer() {
 	return (

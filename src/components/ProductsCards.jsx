@@ -1,30 +1,10 @@
 import "./ProductCards.style.css";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../context/Context";
 
 function ProductsCards({ product }) {
-	const addToWishlist = () => {
-		const productsEl = localStorage.getItem("produs");
-
-		if (productsEl !== null) {
-			const products = JSON.parse(productsEl);
-
-			const existNr = products.find((prod) => {
-				return prod.id === product.id;
-			});
-
-			if (existNr === undefined) {
-				products.push(product);
-			}
-
-			localStorage.setItem("produs", JSON.stringify(products));
-		} else {
-			const newProducts = [];
-			newProducts.push(product);
-			localStorage.setItem("produs", JSON.stringify(newProducts));
-		}
-	}
-
-
+	
 	return (
 		<div className='col'>
 			<div className='card'>
@@ -36,21 +16,20 @@ function ProductsCards({ product }) {
 				<div className='bg'>
 					<h2 className='product_title'>{product.title}</h2>
 					<p className='product_desc'>${product.price}</p>
-					<Link to={"/produse"}>
-						<button
+						<Link to={"/produse"}><button
 							type='button'
 							className='btn btn-outline-dark'
-							id='product_button'>
+							id='product_button'
+							>
 							Find Out
-						</button>
-						<button
+						</button></Link>
+						{/* <button
 							type='button'
 							className='btn btn-outline-dark btn_2'
 							id='product_button'
-							onClick={addToWishlist()}>
-							Wishlist
-						</button>
-					</Link>
+							onClick={addToCart()}>
+							Find Out
+						</button> */}
 				</div>
 			</div>
 		</div>

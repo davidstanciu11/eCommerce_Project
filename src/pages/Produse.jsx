@@ -1,9 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import ProductsCards from "../components/ProductsCards";
 import { Spinner, Row, Input } from "reactstrap";
 import "./Produse.style.css";
+import { CartContext } from "../context/Context";
 
 function Produse() {
+	const GlobalState = useContext(CartContext);
+	const dispatch = GlobalState.dispatch;
+	console.log(GlobalState);
+
 	const [productsList, setProductsList] = useState(null);
 	const [categoriesList, setCategoryList] = useState(null);
 
@@ -72,10 +77,35 @@ function Produse() {
 									})
 									.map((product, index) => {
 										return (
-											<ProductsCards
-												product={product}
-												key={"product_" + index}
-											/>
+											<div className='col' key={"product_" + index}>
+												<div className='card'>
+													<img
+														src={product.image}
+														alt='products images'
+														className='cards_photos'
+													/>
+													<div className='bg'>
+														<h2 className='product_title'>{product.title}</h2>
+														<p className='product_desc'>${product.price}</p>
+														<button
+															type='button'
+															className='btn btn-outline-dark'
+															id='product_button'
+															onClick={() =>
+																dispatch({ type: "ADD", payload: product })
+															}>
+															Add To Cart
+														</button>
+														{/* <button
+															type='button'
+															className='btn btn-outline-dark btn_2'
+															id='product_button'
+															onClick={addToCart()}>
+															Find Out
+															</button> */}
+													</div>
+												</div>
+											</div>
 										);
 									})}
 							</Row>
@@ -83,7 +113,9 @@ function Produse() {
 					</div>
 				</>
 			) : (
-				<div className="spinner"><Spinner></Spinner></div>
+				<div className='spinner'>
+					<Spinner></Spinner>
+				</div>
 			)}
 		</>
 	);
