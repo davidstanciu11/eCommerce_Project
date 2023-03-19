@@ -1,0 +1,148 @@
+ 
+.body {
+    background-color: #F2F2F2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    background-color: #fffffe; 
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 5rem;
+    position: relative;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 4px;
+}
+
+
+.cart_card {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem 2rem 1rem 2rem;
+    
+}
+
+.cart_img {
+    height: 10rem;
+    width: 10rem;
+    object-fit: contain;
+    margin-left: 2rem;
+}
+
+.quantity {
+    display: flex;
+    gap: 7px;
+}
+
+.cart_buttons {
+    padding: 3px;
+    border: thin solid grey;
+    background-color: #fffffe;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #5A5A5A;
+    width: 3rem;
+    height: 3.8rem;
+}
+
+.cart_prodtitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #141414;
+}
+
+.cart_prodprice {
+    font-size: 1.3rem;
+}
+
+.cart_remove {
+    margin-right: 1rem;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+.cart_bg {
+    width: 100vw;
+    height: 60rem;
+    object-fit: cover;
+}
+
+.cartbg_title {
+    position: absolute;
+    bottom: 55rem;
+    left: 72rem;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.your_Cart {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.5px;
+}
+
+
+.link_cart_home {
+    position: absolute;
+    bottom: 52rem;
+    left: 67rem;
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: grey;
+}
+
+.link_cart_produse {
+    position: absolute;
+    bottom: 52rem;
+    left: 76rem;
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: grey;
+}
+
+.product_quantity {
+    font-size: 1.8rem;
+    margin-top: 0.7rem;
+}
+
+.cancel_button {
+    margin-right: 2rem;
+}
+
+.cancel_button:hover {
+    cursor: pointer;
+}
+
+.amount {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.amount_title {
+    font-size: 2.3rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.amount_btn {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    background-color: #141414;
+    color: #fffffe;
+    font-weight: bold;
+}

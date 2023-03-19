@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Spinner, Row } from "reactstrap";
 import "./TrendingProducts.style.css";
-import ProductsCards from "../components/ProductsCards";
+import ProductsCards from "../../components/ProductsCards";
 
 function TrendingProducts() {
 	const [productsList, setProductsList] = useState(null);
@@ -22,7 +22,7 @@ function TrendingProducts() {
 							Quibusdam adipisci voluptatibus nihil libero magni expedita.
 						</p>
 					</div>
-					<Row className="row">
+					<Row className='row'>
 						{productsList.map((product, index) => {
 							return (
 								<ProductsCards product={product} key={"product_" + index} />
@@ -31,7 +31,9 @@ function TrendingProducts() {
 					</Row>
 				</>
 			) : (
-				<div className="spinner"><Spinner></Spinner></div>
+				<div className='spinner'>
+					<Spinner></Spinner>
+				</div>
 			)}
 		</>
 	);

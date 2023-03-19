@@ -1,9 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Produse from "./pages/Produse";
-import Cart from "./pages/Cart";
-import Footer from "./components/Footer";
-import Navigation from "./components/Navigation";
+import Home from "./pages/Home/Home";
+import Produse from "./pages/Produse/Produse";
+import Cart from "./pages/Cart/Cart";
+import Navigation from "././components/Navigation";
 
 function App() {
 	return (
@@ -15,7 +14,6 @@ function App() {
 				<Route path='/produse' element={<Produse />} />
 				<Route path='/*' element={<Home />} />
 			</Routes>
-			<Footer />
 		</div>
 	);
 }

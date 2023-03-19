@@ -1,8 +1,9 @@
 import { useState, useEffect, useContext } from "react";
-import ProductsCards from "../components/ProductsCards";
+import ProductsCards from "../../components/ProductsCards";
 import { Spinner, Row, Input } from "reactstrap";
 import "./Produse.style.css";
-import { CartContext } from "../context/Context";
+import { CartContext } from "../../context/Context";
+import Footer from "../../components/Footer";
 
 function Produse() {
 	const GlobalState = useContext(CartContext);
@@ -76,36 +77,39 @@ function Produse() {
 											.includes(searchInput.toLowerCase());
 									})
 									.map((product, index) => {
+										product.quantity = 1;
 										return (
-											<div className='col' key={"product_" + index}>
-												<div className='card'>
-													<img
-														src={product.image}
-														alt='products images'
-														className='cards_photos'
-													/>
-													<div className='bg'>
-														<h2 className='product_title'>{product.title}</h2>
-														<p className='product_desc'>${product.price}</p>
-														<button
-															type='button'
-															className='btn btn-outline-dark'
-															id='product_button'
-															onClick={() =>
-																dispatch({ type: "ADD", payload: product })
-															}>
-															Add To Cart
-														</button>
-														{/* <button
+											<>
+												<div className='col' key={"product_" + index}>
+													<div className='card'>
+														<img
+															src={product.image}
+															alt='products images'
+															className='cards_photos'
+														/>
+														<div className='bg'>
+															<h2 className='product_title'>{product.title}</h2>
+															<p className='product_desc'>${product.price}</p>
+															<button
+																type='button'
+																className='btn btn-outline-dark'
+																id='product_button'
+																onClick={() =>
+																	dispatch({ type: "ADD", payload: product })
+																}>
+																Add To Cart
+															</button>
+															{/* <button
 															type='button'
 															className='btn btn-outline-dark btn_2'
 															id='product_button'
 															onClick={addToCart()}>
 															Find Out
 															</button> */}
+														</div>
 													</div>
 												</div>
-											</div>
+											</>
 										);
 									})}
 							</Row>
@@ -117,6 +121,7 @@ function Produse() {
 					<Spinner></Spinner>
 				</div>
 			)}
+			<Footer />
 		</>
 	);
 }
