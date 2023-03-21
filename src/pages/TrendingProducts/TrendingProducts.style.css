@@ -50,3 +50,19 @@
 	grid-template-columns: repeat(4, 1fr);
 	padding: 10px;
 }
+
+@media screen and (max-width: 480px) { 
+	#title_trending {
+		font-size: 2rem;
+	}
+
+	#par_trending {
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.row {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}

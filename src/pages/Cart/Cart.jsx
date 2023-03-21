@@ -3,6 +3,7 @@ import { Button } from "bootstrap";
 import { CartContext } from "../../context/Context";
 import "./Cart.style.css";
 import cartbg from "../../assets/cart_bg.jpg";
+import gif from "../../assets/shopping_cart.png";
 import { Link } from "react-router-dom";
 import cancel from "../../assets/cancel.png";
 
@@ -30,7 +31,7 @@ function Cart() {
 						</Link>
 					</div>
 				</section>
-				<h3 className='your_Cart'>Your Cart</h3>
+				<h3 className='your_Cart'>Your Cart <span><img src={gif} alt="" /></span></h3>
 				<div className='cart'>
 					{state.map((product, index) => {
 						return (

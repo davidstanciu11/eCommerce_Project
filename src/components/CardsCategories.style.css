@@ -41,3 +41,16 @@
     color: grey;
     font-size: 1.1rem;
 }
+
+@media screen and (max-width: 480px) { 
+    .flex {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .card_img1 {
+        width: 20rem;
+    }
+}

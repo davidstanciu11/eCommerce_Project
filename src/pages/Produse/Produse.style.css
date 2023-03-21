@@ -1,6 +1,5 @@
 .produse_page {
 	display: flex;
-	
 	font-family: "Montserrat", sans-serif;
 	margin-top: 4rem;
 }
@@ -11,16 +10,13 @@
 	height: 100vh;
 }
 
-
-
-
 #search {
 	width: 55rem;
 	background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg");
 	background-size: 16px;
 	background-repeat: no-repeat;
 	background-position: 50rem center;
-	border-radius: 1rem;
+	border-radius: 1.5rem;
 	padding-left: 3rem;
 	font-size: 1.6rem;
 }
@@ -43,4 +39,26 @@
 
 .categories_title {
 	font-weight: bold;
+}
+
+@media screen and (max-width: 480px) { 
+	.produse_page {
+		display: flex;
+		flex-direction: column;
+		margin-top: 2rem;
+	}
+
+	.filter_section {
+	width: 100vw;
+	text-align: center;
+	max-height: 15rem;
+
+}
+
+#search {
+	max-width: 90vw;
+	background-position: 30rem center;
+	margin-left: auto;
+	margin-right: auto;
+}
 }

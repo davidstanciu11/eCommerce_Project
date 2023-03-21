@@ -41,3 +41,18 @@
     width: 4rem;
     margin-right: 1.5rem;
 }
+
+@media screen and (max-width: 480px) { 
+	.logos {
+		margin-right: 2rem;
+		margin-top: 2rem;
+	}
+	.profile_logos {
+		width: 3.5rem;
+		margin-right: 1rem;
+	}
+
+	.desc_company {
+		margin-left: 2rem;
+	}
+}

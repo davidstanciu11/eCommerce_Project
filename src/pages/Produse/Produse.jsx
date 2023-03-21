@@ -8,8 +8,7 @@ import Footer from "../../components/Footer";
 function Produse() {
 	const GlobalState = useContext(CartContext);
 	const dispatch = GlobalState.dispatch;
-	console.log(GlobalState);
-
+	
 	const [productsList, setProductsList] = useState(null);
 	const [categoriesList, setCategoryList] = useState(null);
 

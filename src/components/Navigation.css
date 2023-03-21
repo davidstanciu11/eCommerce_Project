@@ -43,3 +43,30 @@
     height: 1.8rem;
     margin-bottom: 0.3rem;
 }
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        margin-top: 1rem;
+    }
+    .nav_li {
+        font-size: 1.5rem;
+    }
+
+    .first_part {
+        padding-left: 1rem;
+        margin-left: 1rem;
+    }
+
+    #product {
+        margin-left: 2rem;
+    }
+
+    #title {
+        margin-right: 1.8rem;
+        font-size: 2.5rem;
+    }
+
+    .second_part {
+        margin-right: 2.5rem;
+    }
+}
