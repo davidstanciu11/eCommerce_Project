@@ -183,7 +183,7 @@
 	}
 
 	.cart_card {
-		margin: 1rem;
+		width: 100vw;
 	}
 
 	.cart_img {
@@ -192,6 +192,7 @@
 		margin-left: 3rem;
 		padding-right: 15px;
 	}
+
 	.cart_prodtitle {
 		font-size: 1.2rem;
 		font-weight: 600;
@@ -205,7 +206,7 @@
 	}
 	.cart_prodprice {
 		font-size: 1.2rem;
-        padding: 15px;
+		padding: 15px;
 	}
 
 	.cancel_button {
@@ -214,10 +215,18 @@
 		width: 3rem;
 	}
 
-    .product_quantity {
-    font-size: 1.5rem;
-}
-.quantity {
-    padding: 25px;
-}
+	.product_quantity { 
+		font-size: 1.5rem;
+		margin: auto;
+	}
+
+	.quantity {
+		display: grid;
+		padding: 20px;
+		align-items: center;
+	}
+
+	.cart_prodprice {
+		padding-right: 25px;
+	}
 }
