@@ -1,5 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
-import Kitchen from "../assets/Kitchen.jpg";
+import Kitchen from "../assets/kitchen.jpg";
 import chair from "../assets/chair.webp";
 import sofa from "../assets/sofa.jpg";
 import "./BootstrapCarousel.css";
