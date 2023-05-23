@@ -75,6 +75,12 @@
 		color: #000;
 	}
 
+	.caption_sofa {
+		position: absolute;
+		top: 80%;
+		height: 12rem;
+	}
+
 	.title_product {
 		color: #000;
 	}

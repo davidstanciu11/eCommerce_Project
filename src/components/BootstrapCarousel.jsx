@@ -11,8 +11,8 @@ function DarkVariant() {
 		<Carousel variant='dark' className='carousel'>
 			<Carousel.Item>
 				<img className='show_pics' src={sofa} alt='First slide' />
-				<Carousel.Caption>
-					<h5 className='title_product'>Brown Leather Sofa</h5>
+				<Carousel.Caption className="caption_sofa">
+					<h5 className='title_product title_product_sofa'>Brown Leather Sofa</h5>
 					<p className='description_product'>Newest Collection &#169; 2023</p>
 					<Link to={"/produse"}>
 						<button type='button' className='btn btn-outline-light' id='button'>
