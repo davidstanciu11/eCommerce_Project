@@ -4,8 +4,8 @@ Outstock is an ecommerce project that allows users to search, filter, sort and a
 
 Languages and Frameworks:
 
-*HTMl
-*CSS
-*REACT
-*Bootstrap
-*Web APi
+* HTMl
+* CSS
+* REACT
+* Bootstrap
+* Web APi
